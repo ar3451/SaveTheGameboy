@@ -16,6 +16,7 @@ public class otherMovement : MonoBehaviour
 
     void Update()
     {
+        // use movetowards
         currentPosition += speed * Time.deltaTime;
         transform.position = Vector3.Lerp(target1.position, target2.position, Mathf.PingPong(currentPosition, 5f));
     }
