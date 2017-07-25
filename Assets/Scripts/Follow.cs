@@ -10,6 +10,6 @@ public class Follow : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         transform.LookAt(target);
-        transform.Translate(Vector3.forward * 10 * Time.deltaTime);
+        transform.Translate(Vector3.forward * 20 * Time.deltaTime);
 	}
 }

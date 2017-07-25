@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
 
-    private float timeLeft = 30.0f;
+    private float timeLeft = 30f;
     public Text timeRemaining;
 
 
@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         timeLeft -= Time.deltaTime;
-        timeRemaining.text = "Time Remaining" + "\n" + timeLeft;
+        timeRemaining.text = "Time Remaining" + "\n" + timeLeft.ToString("F1");
         if (timeLeft < 0)
         {
             SceneManager.LoadScene("GameDrop");

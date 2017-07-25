@@ -45,7 +45,7 @@ public class PlayerMovementRigidBody : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            moveSpeed = 50f;
+            moveSpeed = 40f;
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
